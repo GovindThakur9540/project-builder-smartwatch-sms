@@ -1,21 +1,22 @@
 //Working on SMS part
 
 document.querySelector("#sms").onclick = function(){
-    var mainPart = document.querySelector("#main");
-    mainPart.innerHTML = "";
+    var mainPart = document.querySelector("#main");  //for covering body area of watch
+    mainPart.innerHTML = ""; //removing content from body area
 
-    var smsContainer = document.createElement("div");
-    smsContainer.id = "sms-cont";
+    var smsContainer = document.createElement("div");//create div for assigning text
+    smsContainer.id = "sms-container"; //give id to div
     smsContainer.innerHTML = 
     `<div id = "html" onclick="showContent('html')">HTML</div>
     <div id = "css" onclick="showContent('css')">CSS</div>
     <div id = "js" onclick="showContent('js')">JavaScript</div>`;
 
-    mainPart.appendChild(smsContainer);
+    mainPart.appendChild(smsContainer); //append to main part
 };
 
+//write function to showcontent on sms container
 function showContent(data){
-    var smsBox = document.querySelector("#sms-cont");
+    var smsBox = document.querySelector("#sms-container");
     smsBox.innerHTML = "";
     var sms = document.createElement("p");
     sms.id = "text";
@@ -34,9 +35,10 @@ function showContent(data){
         break;
     }
 
-    smsBox.appendChild(sms);
+    smsBox.appendChild(sms); //append sms to text container
 }
 
+//on page loading show time
 var mainPart = document.querySelector("#main");
 mainPart.innerHTML=`<h2 class="time2" id="time2"></h2>
 <p class="day" id="day"></p>

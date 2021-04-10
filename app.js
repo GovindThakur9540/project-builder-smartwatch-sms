@@ -1,3 +1,4 @@
+//write function for displaying time on header
 function displayTime() {
     var time = new Date();
     var hour = time.getHours();

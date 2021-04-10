@@ -74,16 +74,17 @@
 }
 
        
-#sms-cont div {
+#sms-container div {
     background-color: white;
     color: black;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
     padding: 8px;
   }
-  #sms-cont {
+  #sms-container {
     width: 300px;
     height: auto;
+    font-size: 10px;
     text-align: start;
     margin-left: 22px;
     overflow: auto;
